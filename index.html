@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepraj | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(-45deg, #e0f7fa, #f1f8ff, #d1c4e9, #fff3e0);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #00bcd4, #3f51b5);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+      object-fit: cover;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    /* Main Layout */
+    main {
+      max-width: 1100px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    /* Cards */
+    .card {
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(14px);
+      border-left: 6px solid #00bcd4;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.4s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #005f73;
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #00bcd4;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    blockquote {
+      font-style: italic;
+      background: #e0f2f1;
+      border-left: 5px solid #00bcd4;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+      color: #444;
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      background-color: #ffffffb7;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #00bcd4;
+      box-shadow: 0 0 10px rgba(0,188,212,0.4);
+    }
+    button {
+      padding: 0.8rem;
+      background: linear-gradient(135deg, #00bcd4, #2196f3);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: linear-gradient(135deg, #0097a7, #1976d2);
+    }
+
+    /* Footer */
+    footer {
+      background: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 768px) {
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqlleTKdBEnqrJS70w4LAo-DhP9y2VYViUXfSxTl_Yt45OmOCOHGI1EUIF-3n-V_D73aU&usqp=CAU" alt="Profile Picture" class="profile-pic" />
+    <h1>Deepraj</h1>
+    <p>1st Year ECE Student | MIT Muzaffarpur</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>📞 Contact Info</h2>
+      <p><strong>Email:</strong> <a href="mailto:deepraj0839@gmail.com">deepraj0839@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+919931557190">+91 9931557190</a></p>
+      <p><strong>Location:</strong> Muzaffarpur, Bihar</p>
+    </div>
+
+    <div class="card">
+      <h2>🎓 Qualification</h2>
+      <ul>
+        <li>B.Tech in Electronics & Communication Engineering</li>
+        <li>MIT Muzaffarpur (2024 - 2028)</li>
+        <li>12th - ISL Sudamdih Dhanbad, CBSE (2023)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💡 Skills</h2>
+      <ul>
+        <li>C Programming</li>
+        <li>HTML & CSS</li>
+        <li>Basic Electronics</li>
+        <li>Problem Solving</li>
+        <li>Team Communication</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🏆 Achievements</h2>
+      <ul>
+        <li>Gold Medal in Science Olympiad</li>
+        <li>12th Topper (PCM)</li>
+        <li>MIT Tech Fest Participant</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💬 Quotes</h2>
+      <blockquote>“The expert in anything was once a beginner.”</blockquote>
+      <blockquote>“Don’t limit your challenges. Challenge your limits.”</blockquote>
+    </div>
+
+    <div class="card">
+      <h2>📨 Contact Me</h2>
+      <form action="https://formspree.io/f/xblgbqoy" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Deepraj | Made with ❤️ using HTML & CSS
+  </footer>
+
+</body>
+</html>
